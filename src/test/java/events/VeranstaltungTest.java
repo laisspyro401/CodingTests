@@ -96,6 +96,12 @@ class VeranstaltungTest
         Veranstaltung k = new Konzert("Rock", 10, 50.00, "Band");
         assertEquals("Konzert", k.getTyp());
     }
+    @Test
+    void typSeminar()
+    {
+        Seminar x = new Seminar("Python", 20,36.99);
+        assertEquals("Seminar", x.getTyp());
+    }
 
     @Test
     void gesamtsummeUeberMehrereVeranstaltungen()
