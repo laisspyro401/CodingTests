@@ -73,7 +73,7 @@ class VeranstaltungTest
     }
 
     @ParameterizedTest
-    @ValueSource(ints = {0, 1, 50, 1000})
+    @ValueSource(ints = {0, 1, 51, 1000})
     void gueltigePlaetzeWerdenGespeichert(int plaetze)
     {
         Veranstaltung s = new Seminar("Test", plaetze, 10.00);
