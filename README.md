@@ -7,5 +7,5 @@ Paket `events`: Interface `Buchbar`, abstrakte Klasse `Veranstaltung`,
 Unterklassen `Seminar` und `Konzert`.
 
 ## Tests
-JUnit 5, Tests liegen unter `src/test/java/events´.
+JUnit 5, Tests liegen unter `src/test/java/events`.
 Auführen über Maven oder direkt in IntelliJ.
