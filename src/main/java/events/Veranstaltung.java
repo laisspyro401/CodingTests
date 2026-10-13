@@ -49,6 +49,6 @@ public abstract class Veranstaltung implements Buchbar {
 
     public void infoZeigen()
     {
-        System.out.println("Titel: " + titel + " Plätze: " + plaetze + " Preis pro Platz: " + preisProPlatz);
+        System.out.println(titel + " | " + plaetze + " Plaetze | " + preisProPlatz + " EUR");
     }
 }
