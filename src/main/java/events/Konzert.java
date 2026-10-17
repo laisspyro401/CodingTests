@@ -20,9 +20,9 @@ public class Konzert extends Veranstaltung{
         return super.getGesamtpreis() * 1.2;
     }
     @Override
-    public void infoZeigen()
+    public void zeigeInfo()
     {
-        super.infoZeigen();
+        super.zeigeInfo();
         System.out.println(" Band: " + band);
     }
 }
