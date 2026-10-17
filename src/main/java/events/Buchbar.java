@@ -1,6 +1,6 @@
 package events;
 
 public interface Buchbar {
-    double gesamtpreis();
+    double getGesamtpreis();
     boolean istAusverkauft();
 }

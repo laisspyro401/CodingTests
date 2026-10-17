@@ -30,25 +30,20 @@ public abstract class Veranstaltung implements Buchbar {
         return plaetze;
     }
     @Override
-    public double gesamtpreis()
+    public double getGesamtpreis()
     {
         return plaetze * preisProPlatz;
     }
     @Override
     public boolean istAusverkauft()
     {
-        if (plaetze == 0)
-        {
-            return true;
-        }
-        else {
-            return false;
-        }
+        return plaetze == 0;
     }
     public abstract String getTyp();
 
-    public void infoZeigen()
+    public void zeigeInfo()
     {
+
         System.out.println(getTyp() + ": " + titel + " | " + plaetze + " Plaetze | " + preisProPlatz + " EUR");
     }
 }
