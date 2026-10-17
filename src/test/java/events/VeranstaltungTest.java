@@ -12,13 +12,13 @@ class VeranstaltungTest
     void gesamtpreisSeminar()
     {
         Veranstaltung s = new Seminar("Java", 20, 100.00);
-        assertEquals(2000.0, s.gesamtpreis());
+        assertEquals(2000.0, s.getGesamtpreis());
     }
     @Test
     void gesamtpreisKonzertMitZuschlag()
     {
         Veranstaltung k = new Konzert("Rock", 100, 50.00, "Band");
-        assertEquals(6000.0, k.gesamtpreis());
+        assertEquals(6000.0, k.getGesamtpreis());
 
     }
     @Test
@@ -113,7 +113,7 @@ class VeranstaltungTest
         double summe = 0;
         for (Veranstaltung v : liste)
         {
-            summe = summe + v.gesamtpreis();
+            summe = summe + v.getGesamtpreis();
         }
 
         assertEquals(8000.0, summe);

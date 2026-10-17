@@ -15,9 +15,9 @@ public class Konzert extends Veranstaltung{
     }
 
     @Override
-    public double gesamtpreis()
+    public double getGesamtpreis()
     {
-        return super.gesamtpreis() * 1.2;
+        return super.getGesamtpreis() * 1.2;
     }
     @Override
     public void infoZeigen()
